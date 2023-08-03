@@ -12,11 +12,13 @@
     "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "prepublish": "npm run --if-present build",
-    "watch": "textlint-scripts build --watch"
+    "watch": "textlint-scripts build --watch",
+    "format": "prettier --write src"
   },
   "devDependencies": {
     "@textlint/types": "^13.3.3",
     "@types/node": "^18.17.1",
+    "prettier": "3.0.1",
     "textlint-scripts": "^13.3.3",
     "textlint-tester": "^13.3.3",
     "ts-node": "^10.9.1",
