@@ -39,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/ygkn/textlint-preset-ygkn/issues"
   },
-  "homepage": "https://github.com/ygkn/textlint-preset-ygkn#readme"
+  "homepage": "https://github.com/ygkn/textlint-preset-ygkn#readme",
+  "peerDependencies": {
+    "textlint": "*"
+  }
 }
