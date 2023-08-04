@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "textlint ./**/*.md"
+  },
+  "dependencies": {
+    "textlint": "^13.3.3",
+    "@ygkn/textlint-rule-preset-ygkn": "file:.."
+  }
+}
