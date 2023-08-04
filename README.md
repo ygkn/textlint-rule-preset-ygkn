@@ -8,9 +8,37 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install @ygkn/textlint-rule-preset-ygkn
 
+## Rules
+
+This preset based on some presets and rules as follows.
+
+See [src/rules.ts](src/rules.ts) for more details.
+
+### Presets
+
+- [textlint-rule-preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)
+- [textlint-rule-preset-ja-spacing](https://github.com/textlint-ja/textlint-rule-preset-ja-spacing)
+
+### Rules
+
+- [@proofdict/textlint-rule-proofdict](https://github.com/proofdict/proofdict/blob/master/packages/%40proofdict/textlint-rule-proofdict)
+
 ## Usage
 
-Via `.textlintrc.json`(Recommended)
+### rc file (Recommended)
+
+#### JavaScript (with type checking)
+
+```js
+/** @type {import("@textlint/config-loader").TextlintRcConfig}*/
+module.exports = {
+  rules: {
+    "@ygkn/preset-ygkn": true,
+  },
+};
+```
+
+#### JSON
 
 ```json
 {
@@ -20,7 +48,7 @@ Via `.textlintrc.json`(Recommended)
 }
 ```
 
-Via CLI
+### Via CLI
 
 ```
 textlint --rule @ygkn/preset-ygkn README.md
